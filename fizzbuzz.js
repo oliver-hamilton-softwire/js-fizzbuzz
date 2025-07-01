@@ -1,7 +1,5 @@
 // This is our main function
 function fizzbuzz() {
-    console.log("Hello, World!");
-
     for (let i = 1; i <= 100; i++) {
         // Multiple of 3 and 5
         if (i % 15 == 0) {
