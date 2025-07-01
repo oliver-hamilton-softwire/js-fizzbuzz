@@ -33,6 +33,10 @@ function fizzbuzz() {
 
 }
 
+function addTest(i, desiredMultiple, msg, clear = false) {
+    
+}
+
 // Now, we run the main function:
 fizzbuzz();
 
