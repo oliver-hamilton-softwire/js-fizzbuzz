@@ -1,6 +1,20 @@
+const readline = require('readline');
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.question('What number would you like to print up to? ', (numString) => {
+    // maxNum = parseInt(numString);
+    // Now, we run the main function:
+    fizzbuzz(parseInt(numString));
+    rl.close();
+})
+
 // This is our main function
-function fizzbuzz() {
-    for (let i = 1; i <= 3*5*17; i++) {
+function fizzbuzz(maxNum) {
+    for (let i = 1; i <= maxNum; i++) {
         let output = [];
         output = addTest(i, 
             output, 
@@ -67,7 +81,4 @@ function addTest(i, output, testFunc, actionFunc) {
     }
     
 }
-
-// Now, we run the main function:
-fizzbuzz();
 
