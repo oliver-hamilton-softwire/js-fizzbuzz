@@ -1,0 +1,22 @@
+{
+  "name": "fizzbuzz",
+  "version": "1.0.0",
+  "description": "This is our first programming exercise in the bootcamp. We will write some code to play the game \"FizzBuzz\". The requirements for this game can be found [here](FizzBuzzSpec.md).",
+  "main": "fizzbuzz.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oliver-hamilton-softwire/js-fizzbuzz.git"
+  },
+  "devDependencies": {
+    "jest": "^28.1.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oliver-hamilton-softwire/js-fizzbuzz/issues"
+  },
+  "homepage": "https://github.com/oliver-hamilton-softwire/js-fizzbuzz#readme"
+}
