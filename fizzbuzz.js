@@ -1,4 +1,4 @@
-module.exports.fizzbuzz = (i, rules) => {
+module.exports.fizzbuzz = (i, rules, customRules = []) => {
     let output = [];
     if (rules.includes('3')) {
         output = addTest(i, 
@@ -55,6 +55,10 @@ module.exports.fizzbuzz = (i, rules) => {
             (i) => i % 17 == 0 ,
             (output) => output.reverse()
         );
+    }
+
+    for (let rule of customRules) {
+        output = addTest(i, output, ...rule);
     }
 
     // Log the number if the output array is empty,
